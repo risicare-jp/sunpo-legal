@@ -44,9 +44,19 @@
 
 <h3>2-3. 自動的に収集される技術情報</h3>
 <ul>
-  <li>デバイス識別子（広告 ID を含む場合あり）</li>
+  <li>デバイス識別子</li>
   <li>アプリのクラッシュログ・パフォーマンスデータ</li>
   <li>利用状況ログ（機能ごとのアクセス頻度など）</li>
+</ul>
+
+<h3>2-4. 健康・活動データ（歩数・年代・体重）</h3>
+<p>本アプリは、「きろく」機能で散歩の記録やグラフを表示するために、歩数（散歩中の歩数、および日々・月間・通算の歩数）と、散歩の記録（距離・推定カロリー）を保存します。ユーザーが年代・体重を入力した場合は、その情報も同様に保存し、活動量の目安やカロリー計算の精度を上げる目的で利用します。年代・体重の入力は任意であり、入力しなくてもすべての機能をご利用いただけます。</p>
+<ul>
+  <li><strong>散歩中の歩数</strong>: 端末のモーションセンサー（iPhone の場合）から取得します。</li>
+  <li><strong>日々・月間・通算の歩数</strong>: ユーザーの許可を得たうえで Apple の「ヘルスケア」（HealthKit）から読み取ります。本アプリがヘルスケアにデータを書き込むことはありません（読み取り専用）。</li>
+  <li><strong>利用目的</strong>: ご自身の歩数・活動記録（日々・月間・通算の合計）を表示・保存する目的でのみ利用し、アカウントに紐づけて本アプリのデータベースに保存します。健康上の助言や医学的な診断のためには使いません。</li>
+  <li><strong>第三者提供</strong>: 広告目的での利用や、正確な歩数・体重・年代の第三者への提供・販売は行いません。</li>
+  <li><strong>削除</strong>: アカウントを削除した場合、保存されている歩数を含む健康・活動データも削除されます。</li>
 </ul>
 
 <h2>3. 情報の利用目的</h2>
@@ -55,7 +65,6 @@
   <li>本アプリの主要機能（散歩コース計測・パノラマ表示・コンテンツ共有）の提供</li>
   <li>Apple Sign-In によるユーザー認証・アカウント管理</li>
   <li>有料プランの管理および課金処理</li>
-  <li>広告の表示（AdMob による）</li>
   <li>アプリのバグ修正・品質改善・機能開発</li>
   <li>利用規約違反・不正利用への対応</li>
   <li>法令に基づく開示要請への対応</li>
@@ -88,13 +97,6 @@
   <li><strong>プライバシーポリシー</strong>: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
 </ul>
 
-<h3>Google AdMob（広告配信）</h3>
-<ul>
-  <li><strong>用途</strong>: 無料プランユーザーへの広告表示</li>
-  <li><strong>送信データ</strong>: 広告 ID、デバイス情報、大まかな位置情報（ユーザーの同意を得た場合）</li>
-  <li><strong>プライバシーポリシー</strong>: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-</ul>
-
 <h3>Apple Sign-In</h3>
 <ul>
   <li><strong>用途</strong>: ユーザー認証</li>
@@ -112,17 +114,12 @@
 </ul>
 <p>iOS の設定 &gt; プライバシーとセキュリティ &gt; 位置情報サービス から、いつでも位置情報の許可を取り消すことができます。</p>
 
-<h2>7. 広告とトラッキング（ATT・AdMob）</h2>
-<p>本アプリの無料プランでは、Google AdMob による広告を表示します。</p>
-
-<h3>App Tracking Transparency（ATT）</h3>
-<p>Apple の App Tracking Transparency フレームワークに基づき、パーソナライズド広告の配信にはユーザーの事前同意が必要です。</p>
+<h2>7. 広告とトラッキング（ATT）</h2>
+<p>現在、本アプリに広告は表示されず、広告目的で端末の広告識別子（IDFA など）を利用することもありません。</p>
 <ul>
-  <li><strong>同意した場合</strong>: 広告 ID を使用したパーソナライズド広告が表示されます。</li>
-  <li><strong>同意しない場合</strong>: 広告 ID を使用しない文脈広告（コンテキスト広告）が表示されます。広告は引き続き表示されます。</li>
+  <li>将来、無料プランに広告を導入する場合は、本ポリシーとアプリ内の設定画面を更新した上でお知らせします。</li>
+  <li>広告を導入する場合、トラッキングには Apple の App Tracking Transparency に基づく許可を求めます。許可しない場合でも本アプリは利用できます。</li>
 </ul>
-<p>ATT の同意状態は iOS の設定 &gt; プライバシーとセキュリティ &gt; トラッキング からいつでも変更できます。</p>
-<p>有料プラン（SunPo プレミアム）にご加入いただくと、広告は表示されません。</p>
 
 <h2>8. データの保存と削除</h2>
 
@@ -143,7 +140,7 @@
 <p>
 <strong>事業者名</strong>: BLUE（個人事業主）<br>
 <strong>メールアドレス</strong>: <a href="mailto:risicare.blue@gmail.com">risicare.blue@gmail.com</a><br>
-<strong>公開 URL</strong>: <a href="https://risicare-jp.github.io/sanpo/legal/privacy-policy.html">https://risicare-jp.github.io/sanpo/legal/privacy-policy.html</a>
+<strong>公開 URL</strong>: <a href="https://risicare-jp.github.io/sunpo-legal/legal/privacy-policy.html">https://risicare-jp.github.io/sunpo-legal/legal/privacy-policy.html</a>
 </p>
 <p>お問い合わせへの回答は、原則として 7 営業日以内に行います。</p>
 
@@ -153,10 +150,10 @@
   <li><strong>軽微な変更</strong>: 本ページ上に改定後のポリシーを掲載します。</li>
   <li><strong>重要な変更</strong>（収集する情報の種類・利用目的の実質的な変更など）: アプリ内通知またはメールにて事前にお知らせします。</li>
 </ul>
-<p>改定後の本ポリシーは <a href="https://risicare-jp.github.io/sanpo/legal/privacy-policy.html">https://risicare-jp.github.io/sanpo/legal/privacy-policy.html</a> にて公開します。継続してご利用いただいた場合、改定後のポリシーに同意したものとみなします。</p>
+<p>改定後の本ポリシーは <a href="https://risicare-jp.github.io/sunpo-legal/legal/privacy-policy.html">https://risicare-jp.github.io/sunpo-legal/legal/privacy-policy.html</a> にて公開します。継続してご利用いただいた場合、改定後のポリシーに同意したものとみなします。</p>
 
 <div class="last-updated">
-  <p><strong>最終更新日</strong>: 2026年7月1日<br>
+  <p><strong>最終更新日</strong>: 2026年7月15日<br>
   <strong>事業者</strong>: BLUE（屋号・個人事業主）</p>
 </div>
 
